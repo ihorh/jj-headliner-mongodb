@@ -24,7 +24,11 @@ class MongoConfig(BaseSettings):
         "retryWrites": "true",
         "w": "majority",
     }
-    model_config = SettingsConfigDict(env_file=".mongodb.env", env_file_encoding="utf-8")
+    model_config = SettingsConfigDict(
+        env_file=".mongodb.env",
+        env_file_encoding="utf-8",
+        case_sensitive=True,
+    )
 
     host: str = _NOT_SET
     user: str = _NOT_SET
