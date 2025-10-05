@@ -22,4 +22,3 @@ line-length = 120
 
 [tool.pyright]
 typeCheckingMode = "basic"
-
