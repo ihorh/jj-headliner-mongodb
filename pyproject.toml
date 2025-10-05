@@ -20,5 +20,9 @@ build-backend = "uv_build"
 [tool.ruff]
 line-length = 120
 
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D10"]
+
 [tool.pyright]
 typeCheckingMode = "basic"
